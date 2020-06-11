@@ -1,0 +1,17 @@
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <!--  head 선언  -->
+    <th:block th:fragment="scriptDefault">
+        <!-- Mainly scripts -->
+        <script th:src="@{/bootstrap/js/jquery-3.1.1.min.js}"></script>
+        <script th:src="@{/bootstrap/js/popper.min.js}"></script>
+        <script th:src="@{/bootstrap/js/bootstrap.js}"></script>
+        <script th:src="@{/bootstrap/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
+        <script th:src="@{/bootstrap/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+
+        <!--    content page의 script fragment 삽입    -->
+        <th:block layout:fragment="script"></th:block>
+        
+    </th:block>
+</html>

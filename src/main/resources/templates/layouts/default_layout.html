@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lagn="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title layout:title-pattern="$LAYOUT_TITLE | $CONTENT_TITLE" >INSPINIA</title>
+    <th:block th:replace="fragments/head-default :: headDefault" ></th:block>
+</head>
+<body>
+<div id="wrapper">
+    <th:block th:replace="fragments/nav-left :: navLeft" ></th:block>
+    <div id="page-wrapper" class="gray-bg">
+        <th:block th:replace="fragments/nav-top-default :: navTopDefault"></th:block>
+        <th:block layout:fragment="content"></th:block>
+        <th:block th:replace="fragments/footer :: footer"></th:block>
+    </div>
+</div>
+<th:block th:replace="fragments/script-default :: scriptDefault"></th:block>
+</body>
+</html>

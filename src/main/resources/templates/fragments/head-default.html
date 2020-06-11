@@ -1,0 +1,21 @@
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <!--  head 선언  -->
+    <th:block th:fragment="headDefault">
+        <!--    head-default    -->
+        <!-- 일단 전부 다 들어 가는 것-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+        <link th:href="@{/bootstrap/font-awesome/css/font-awesome.css}" rel="stylesheet">
+
+        <!--    해당 컨텐츠 페이지에서 사용할 css    -->
+        <th:block layout:fragment="css"></th:block>
+
+        <link th:href="@{/bootstrap/css/animate.css}" rel="stylesheet">
+        <link th:href="@{/bootstrap/css/style.css}" rel="stylesheet">
+    </th:block>
+</html>
